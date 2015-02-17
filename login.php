@@ -1,3 +1,23 @@
+<!-- 
+THIS ONE IS FOR YOU TO FIX
+1. IN THE OPENING <form> add appropriate attributes
+2. the login algorithm part, keep it simple
+$query = "SELECT * FROM electricals_tbl WHERE email='{$email}' AND pass='{$pass}' ";
+$result = mysql_query($query);
+if(!$result){
+	echo "error" . mysql_error();
+} else {
+	$row = mysql_fetch_assoc($result);
+	echo "Hello " . $row['name'];
+}
+ 
+
+ this should work, if this works then slowly improve that to add other features.
+ Good Luck!
+
+ -->
+
+
 <?php require "home.php" ?>
 <!DOCTYPE html>
 <html>
